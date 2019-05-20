@@ -36,7 +36,7 @@ pipeline {
       stage('checkout') {
           steps {
                   notifyBuild('STARTED')
-                  git branch: 'master',  credentialsId: '3dabe90d-041b-4960-974f-2764e857cb70' , url: 'git@github.com:NajlaBz/MySuperRepo.git'
+                  git branch: 'master' , url: 'git@github.com:NajlaBz/MySuperRepo.git'
              
           }
         }
